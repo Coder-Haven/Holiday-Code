@@ -1,0 +1,223 @@
+body{
+  background-color: #000;
+  background-image: url('http://i.imgur.com/BiSmXaq.png');
+  
+animation: snow 20s infinite;
+
+  
+}
+
+img{
+  width: 100%:
+    height: 100%;
+}
+
+#tree-top{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: -80px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid green;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -200px;
+
+}
+
+
+
+#tree-middle{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid green;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -300px;
+
+
+}
+
+#tree-bottom{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 200px solid green;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -200px;
+
+
+}
+
+.light{
+  position: relative;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  display: inline-block;
+  
+}
+
+#light1{ 
+  left: -45px;
+  top: 60px;
+}
+#light2{
+  right: 9px;
+  top: 34px;
+}
+#light3{
+  top: 8px;
+  right: -30px;
+}
+#light4{
+  top: 100px;
+  right: 80px;
+}
+#light5{
+  top: 73px;
+  right: 10px;
+}
+#light6{
+  top: 46px;
+  right: -65px;
+}
+
+#light7{
+  top: 150px;
+  right: 130px;
+}
+#light8{
+  top:125px;
+  right: 10px;
+}
+#light9{
+  top: 98px;
+  right: -110px;
+}
+
+#ball{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 10px;
+  border: 2px solid yellow;
+  box-shadow: 1px 1px 50px #fff;
+  line-height: 50px;
+  text-align: center;
+  font-family: impact, arial, serif;
+  font-size: 25px;
+  color: #ff00ff;
+  
+  animation: ballDrop 12s; 
+  animation-fill-mode: forwards;
+  
+
+  
+}
+
+#poll{
+  z-index: -3;
+  position: absolute;
+  width: 5px;
+  height: 200px;
+  background-color: #ccc;
+  top: 10px;
+}
+
+
+#hh{
+  display: none;
+  position: absolute;
+  height: 200px;
+  width: 800px;
+  color: #ff0000;
+  font-family: impact, airal, serif;
+  font-size: 60px;
+  top: 0px;
+}
+
+#hh span{
+  top: 20px;
+}
+#from{
+  font-size: 20px;
+  font-family: arial, serif;
+  margin-left: 150px;
+}
+
+#coder{
+  display: none;
+  position: absolute;
+  height: 200px;
+  width: 800px;
+  color: #ff00ff;
+  font-family: impact, arial, serif;
+  font-size: 60px;
+  top: 100px;
+  left: 460px;
+}
+
+
+@keyframes light1 {
+  0%{
+    background-color: #ff0000;
+  }
+  30%{
+    background-color: #ff00ff;
+  }
+  100%{
+    background-color: #0ff00f;
+  }
+}
+
+.light {
+  animation: light1 1s infinite;
+}
+
+@keyframes snow{
+  0%{
+    background-position: 0px 0px;
+  }
+  100%{
+    background-position: 200px 300px;
+  }
+}
+
+@keyframes ballDrop{
+  
+  0%{
+    top: 10px;
+  }
+  100%{
+    top: 160px;
+  }
+  
+  
+}
+
+@keyframes HN{
+  0%{
+    display: none;
+  }
+  99%{
+    display: none;
+  }
+  100%{
+    display: block;
+  }
+}
